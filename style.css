@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+::selection {
+    color: aliceblue;
+    background-color: black;
+}
+
+.main {
+    background-color: #0E1630;
+}
+
+.name1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+span {
+    color: #01D286;
+}
+
+#name2 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.upper_line {
+    background-color: #01D286
+}
+
+.discord {
+    background-color: #111827;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 18px;
+
+}
+
+:root {
+    --lovelish: hsl(0, 0%, 18%);
+    --handshake: hsl(103, 100%, 56%);
+    --btn2: hsl(242, 43%, 65%);
+    --btn3: hsl(160, 86%, 63%);
+  }
+  
+  .main-box {
+    height: 100vh;
+    display: flex;
+    margin: auto;
+  }
+  
+  .button-box {
+    height: 500px;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: grid;
+  }
+  
+  .button {
+    height: 80px;
+    width: 300px;
+    display: flex;
+    border-radius: 2.5rem;
+    transition: 0.5s;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    background-image: linear-gradient(
+      to right,
+      #8081cf,
+      #847dc9,
+      #8778c3,
+      #8a74bd,
+      #8d70b7,
+      #8f6db2,
+      #9169ac,
+      #9266a7,
+      #9362a1,
+      #935e9a,
+      #935b93,
+      #93578d
+    );
+    color: white;
+    animation: blurr 2s;
+    animation-iteration-count: infinite;
+    outline: none;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .button-img {
+    margin-left: 1.2rem;
+    margin-top: 8px;
+    transition: 0.5s;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  
+  @keyframes blurr {
+    0%,
+    100% {
+      box-shadow: 0 0 10px var(--handshake);
+    }
+  
+    50% {
+      box-shadow: 0 0 36px var(--handshake);
+    }
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 0%;
+    }
+  }
+  
+  .title {
+    font-weight: light;
+    margin-top: 1.4rem;
+    margin-left: 1.5rem;
+    transition: 0.5s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+  }
+  
+  .button:hover .title {
+    transform: translateX(-30px);
+    animation: fade 0.7s;
+    opacity: 0%;
+  }
+  
+  .button:hover img {
+    transform: translateX(-210px);
+  }
+  
+  .description {
+    position: absolute;
+    margin-top: 0.5rem;
+    font-weight: light;
+    line-height: 2rem;
+    font-size: 20px;
+    font-style: italic;
+    transition: 0.5s;
+    opacity: 0%;
+    margin-left: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .button:hover .description {
+    transform: translateX(70px);
+    opacity: 100%;
+  }
