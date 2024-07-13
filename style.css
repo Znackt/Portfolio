@@ -171,3 +171,9 @@ span {
     transform: translateX(70px);
     opacity: 100%;
   }
+
+  .nav a:hover {
+    color: #00f49a;
+  }
+
+  
