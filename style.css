@@ -7,18 +7,12 @@
     font-family: sans-serif;
 }
 
-html,
-body {
-    height: 100%;
-    width: 100%;
-}
-
 ::selection {
     color: aliceblue;
     background-color: black;
 }
 
-.main {
+body {
     background-color: #0E1630;
 }
 
